@@ -7,6 +7,24 @@ local World = {
 
 function World:register(system)
   table.insert(self.systems, system)
+  return system
+end
+
+function World:getAllWith(requires)
+  local matched = {}
+
+  for i = 1, #self.entities do
+    local ent = self.entities[i]
+    local matches = true
+
+    for j = 1, #requires do
+      if ent:get(j) == nil then
+        matches = false
+      end
+    end
+    if matches then table.insert(matched, ent) end
+  end
+  return matched
 end
 
 function World:assemble(components)
