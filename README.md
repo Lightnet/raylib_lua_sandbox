@@ -15,8 +15,13 @@
 
 
 # Windows:
+
+  * https://github.com/tsnake41/raylib-lua
+
+  Download files binary, create bin folder on project and place it there.
+
 ```
-./raylua_s.exe main.lua
+./bin/raylua_s.exe main.lua
 ```
 https://github.com/tsnake41/raylib-lua?tab=readme-ov-file
 
