@@ -15,11 +15,34 @@
 
 
 # Windows:
+  There are couple way to run application one is task, other is lanucher plugin for lua.
 
   * https://github.com/tsnake41/raylib-lua
 
-  Download files binary, create bin folder on project and place it there.
+  Download files binary. Need to config in .vscode folder for application to run.
 
+ settings.json
+```
+{
+  "pixelbyte.love2d.path": "path/raylua_s.exe"
+}
+```
+Required full path.
+
+task.json
+```
+{
+  "command": "${workspaceRoot}\\run.bat",
+}
+```
+```
+{
+  "command": "path/raylua_s.exe",
+  "args": ["main.lua"],
+}
+```
+
+Project area.
 ```
 ./bin/raylua_s.exe main.lua
 ```

@@ -1,5 +1,5 @@
 print("init app...")
-
+--local socket = require("socket")--nope
 local World = require 'World'
 local Component = require 'Component'
 local System = require 'System'
@@ -52,7 +52,9 @@ function app:initialize(options)
 end
 
 function app:update(dt)
-
+  if rl.IsKeyPressed(rl.KEY_ENTER) then 
+    print("ENTER KEY...")
+  end
 end
 
 function app:draw()

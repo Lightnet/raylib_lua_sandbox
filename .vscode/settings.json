@@ -1,5 +1,5 @@
 {
-  "pixelbyte.love2d.path": "${workspaceFolder}/bin/raylua_s.exe",
+  "pixelbyte.love2d.path": "D:/dev/raylib_lua/raylua_s.exe",
   "pixelbyte.love2d.debug": true,
   "pixelbyte.love2d.runOnSave": false,
   "pixelbyte.love2d.srcDir": ".",
