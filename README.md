@@ -14,6 +14,12 @@
   Just testing build for Raylib with lua script.
 
 
+
+# Resources refs:
+ - https://gist.github.com/alexander-matz/f8ee4eb9fdf676203d70c1e5e329a6ec raylib.lua
+ - https://github.com/raysan5/raylib-lua/blob/master/examples/core/core_3d_camera_free.lua
+
+
 # Windows:
   There are couple way to run application one is task, other is lanucher plugin for lua.
 
@@ -48,11 +54,14 @@ Project area.
 ```
 https://github.com/tsnake41/raylib-lua?tab=readme-ov-file
 
-# Credits:
- * https://www.youtube.com/watch?v=GhyV6_D2NEU Love2D | Entity Component System | Episode 2
- * 
 
 # Links:
+
  * https://www.raylib.com/
  * https://github.com/tsnake41/raylib-lua
+ * 
+
+# Credits:
+
+ * https://www.youtube.com/watch?v=GhyV6_D2NEU Love2D | Entity Component System | Episode 2
  * 

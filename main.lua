@@ -2,7 +2,7 @@
   # Information:
     main entry point for application.
 ]]
-local app = require 'app'
+local app = require 'engine/app'
 
 -- rl.SetConfigFlags(rl.FLAG_VSYNC_HINT)
 -- rl.InitWindow(800, 450, "raylib [core] example - basic window")
@@ -11,16 +11,17 @@ app:initialize()
 
 --loop update and draw
 while not rl.WindowShouldClose() do
+  local t = rl.GetTime()
   app:update()
 
-	rl.BeginDrawing()
-  rl.ClearBackground(rl.RAYWHITE)
+	-- rl.BeginDrawing()
+  -- rl.ClearBackground(rl.RAYWHITE)
   app:draw()
 	--rl.DrawText("Congrats! You created your first window!", 190, 200, 20, rl.LIGHTGRAY)
-  if rl.GuiButton({0,0,64,32},"Hello") then
-    print("click button...")
-  end
-	rl.EndDrawing()
+  -- if rl.GuiButton({0,0,64,32},"Hello") then
+  --   print("click button...")
+  -- end
+	-- rl.EndDrawing()
 end
 
 app:cleanup()
